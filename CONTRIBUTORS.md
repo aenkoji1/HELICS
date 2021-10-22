@@ -28,10 +28,10 @@ If you would like to contribute to the HELICS project see [CONTRIBUTING](CONTRIB
 - [Denis Nadeau](https://github.com/dnadeau4) (Now LANL)
 - [Ben Salazar](https://github.com/salazar33)
 - [Brian Kelley](https://github.com/bmkelley)
-- [Hoa Ngo](https://github.com/hgngo)
+- [Hoa Ngo](https://github.com/hgngo) (Now SVB)
 - [Ai Enkoji](https://github.com/aenkoji1)
 - [Nan Duan](https://github.com/nan-duan)
-- [Nathan Yee](https://github.com/yee29)
+- [Nathan Yee](https://github.com/yee29) (Now Accenture)
 
 ### National Renewable Energy Lab
 
@@ -44,7 +44,7 @@ If you would like to contribute to the HELICS project see [CONTRIBUTING](CONTRIB
 
 ### Argonne National Lab
 
-- [Shrirang Abhyankar](https://github.com/abhyshr) (now PNNL)
+- [Shrirang Abhyankar](https://github.com/abhyshr) (Now PNNL)
 - [Karthikeyan Balasubramaniam](https://github.com/karthikbalasu)
 - [Manoj Kumar Cebol Sundarrajan](https://github.com/manoj1511)
 
@@ -52,6 +52,8 @@ If you would like to contribute to the HELICS project see [CONTRIBUTING](CONTRIB
 
 - [Beroset](https://github.com/beroset)
 - [Nitin Barthwal](https://github.com/nitin-barthwal)
+- [Gaurav Kumar](https://github.com/slashgk)
+- [Parth Bansal](https://github.com/parthb83)
 
 ## Used Libraries or Code
 
