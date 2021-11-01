@@ -186,6 +186,7 @@ namespace details {
 
 /** an iteration time structure */
 typedef struct HelicsIterationTime {
+  public:
     HelicsTime grantedTime;  //!< the time of the granted step
     HelicsIterationResult status;  //!< the convergence state
 } HelicsIterationTime;
