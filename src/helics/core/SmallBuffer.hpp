@@ -51,8 +51,10 @@ class SmallBuffer {
 
     template<typename U,
              typename T = std::enable_if_t<std::is_constructible_v<std::string_view, U>>>
-    SmallBuffer(U&& u): heap(buffer.data())
+    SmallBuffer(U&& u)
     {
+        // initializer list can't be used for `heap` because `buffer` isn't initialized yet
+        heap = buffer.data();
         std::string_view val(std::forward<U>(u));
         resize(val.size());
         std::memcpy(heap, val.data(), val.size());
