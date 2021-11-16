@@ -252,12 +252,12 @@ env:
 
 We set the output directory to UQ_EV_Study, this is where all the
 output files will be stored. Every co-simulation run executed by
-Merlin will have it's own subdirectory in `./UQ_EV_Study`.
+Merlin will have its own subdirectory in `./UQ_EV_Study`.
 
 ##### Merlin Step
 
 Remember this step is for Merlin to setup all the files and data it
-needs to execute it's jobs. In the Monte Carlo co-simulation there is
+needs to execute its jobs. In the Monte Carlo co-simulation there is
 a python script we created that will generated the `helics_cli` runner
 files that Merlin will use when it executes the `helics_cli`. The
 `make_samples_merlin.py` script will also output a csv file that Merlin will
@@ -271,8 +271,8 @@ merlin:
     generate:
       cmd: |
         python3 $(SPECROOT)/make_samples_merlin.py $(N_SAMPLES) $(MERLIN_INFO)
-        cp $(SPECROOT)/EVMsgFed.py $(MERLIN_INFO)
-        cp $(SPECROOT)/EVControllerMsgFed.py $(MERLIN_INFO)
+        cp $(SPECROOT)/Battery.py $(MERLIN_INFO)
+        cp $(SPECROOT)/Charger.py $(MERLIN_INFO)
     file: $(MERLIN_INFO)/samples.csv
     column_labels: [FED]
 ```
@@ -330,7 +330,7 @@ study:
     run:
       cmd: |
         spack load helics
-        /home/yee29/projects/helics/helics-cli/bin/helics run --path=$(MERLIN_INFO)/$(FED)
+        helics run --path=$(MERLIN_INFO)/$(FED)
         echo "DONE"
   - name: cleanup
     description: Clean up
