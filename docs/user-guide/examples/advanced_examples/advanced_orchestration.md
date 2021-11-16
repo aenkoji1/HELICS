@@ -5,13 +5,6 @@
 
 # Monte Carlo Co-Simulations
 
-```eval_rst
-.. toctree::
-    :maxdepth: 1
-
-
-```
-
 This tutorial will walk through how to set up a HELICS Monte Carlo simulation using two techniques: (1) in series on a single machine, and (2) in parallel on an HPC cluster using Merlin. We assume that you have already completed the
 [**orchestration tutorial with Merlin**](../../advanced_topics/orchestration.md) and have some
 familiarity with how Merlin works.
@@ -248,7 +241,7 @@ generated `helics_cli` runner files.
 In the Merlin spec we will instruct Merlin to execute N number of the
 Monte Carlo co-simulations. The number of samples is the number
 specified as the `N_SAMPLES` env variable in the env section of the
-merlin spec.
+Merlin spec.
 
 ```yaml
 env:
@@ -259,7 +252,7 @@ env:
 
 We set the output directory to UQ_EV_Study, this is where all the
 output files will be stored. Every co-simulation run executed by
-merlin will have it's own subdirectory in `./UQ_EV_Study`.
+Merlin will have it's own subdirectory in `./UQ_EV_Study`.
 
 ##### Merlin Step
 
