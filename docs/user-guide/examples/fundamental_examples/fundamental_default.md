@@ -113,7 +113,6 @@ fed = h.helicsCreateValueFederateFromConfig("BatteryConfig.json")
 
 Recall that federate registration and configuration is typically done **before** entering execution mode.
 
-
 ### Co-simulation Execution: `helics_cli`
 
 At this point in setting up the Base Example co-simulation, we have:

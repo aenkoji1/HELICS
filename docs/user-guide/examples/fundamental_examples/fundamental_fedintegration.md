@@ -244,7 +244,6 @@ Here we only need to designate the number of connections to register in one plac
 In this tutorial, we have covered how to integrate federates into a co-simulation using the PyHELICS API. Integration covers configuration of federates and registration of communication connections. Execution of the co-simulation is done the same as with the Base Example, with a runner JSON we sent to `helics_cli`. The runner JSON has not changed from the Base Example:
 
 ```json
-
 {
   "name": "fundamental_integration",
   "federates": [
